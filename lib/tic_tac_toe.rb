@@ -140,11 +140,11 @@ class TicTacToe
     puts "Please enter 1-9:"
     input = gets.strip
     input2 = input_to_index(input)
-    if !valid_move?(input)
-      turn
-    end
-    move(input, current_player)
-    display_board
+    # if !valid_move?(input)
+    #   turn
+    # end
+    # move(input, current_player)
+    # display_board
   end
 
   def valid_move?(input)
