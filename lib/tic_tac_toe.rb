@@ -1,5 +1,5 @@
 class TicTacToe
-  attr_accessor :board 
+  attr_accessor :board
   WIN_COMBINATIONS = [
 [0,1,2],
 [3,4,5],
@@ -11,9 +11,13 @@ class TicTacToe
 [2,5,8]
 
 ]
-  def initialize(board = nil)
-    @board = board || Array.new(9, " ")
-  end
+  # def initialize(board = nil)
+  #   @board = board || Array.new(9, " ")
+  # end
+
+  def initialize()
+   @board = Array.new(9, " ")
+ end
 
   def display_board
     puts " #{board[0]} | #{board[1]} | #{board[2]} "
