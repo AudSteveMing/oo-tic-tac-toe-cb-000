@@ -53,7 +53,7 @@ def turn
       user_input = gets.strip
       user_input_normalized = input_to_index(user_input)
        if valid_move?(user_input_normalized)
-         move(user_input_normalized)
+         move(user_input_normalized, current_player)
          display_board
        else
          turn
