@@ -69,7 +69,7 @@ def turn
     if !valid_move?(input2)
       turn
     end
-    move(input, current_player)
+    move(input2, current_player)
     display_board
   end
 
