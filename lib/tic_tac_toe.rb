@@ -48,19 +48,29 @@ end
 #    !(position(location).nil? || position(location) == " ")
 #   end
 
-def turn
-      display_board
+# def turn
+#       display_board
+#       puts "Please enter 1-9"
+#       user_input = gets.strip
+#       user_input_normalized = input_to_index(user_input)
+#        if !valid_move?(user_input_normalized)
+#          turn
+#        end
+#        move(user_input_normalized, current_player)
+#        display_board
+# 
+# end
 
-      puts "Please enter a number between 1-9"
-      user_input = gets.strip
-      user_input_normalized = input_to_index(user_input)
-       if !valid_move?(user_input_normalized)
-         turn
-       end
-       move(user_input_normalized, current_player)
-       display_board
-
-end
+-  def turn
+-    display_board
+-    puts "Please enter 1-9:"
+-    input = gets.strip
+-    if !valid_move?(input)
+-      turn
+-    end
+-    move(input, current_player)
+-    display_board
+-  end
 
 def turn_count
 
