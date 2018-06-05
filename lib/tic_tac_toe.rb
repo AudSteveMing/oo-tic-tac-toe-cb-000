@@ -30,10 +30,15 @@ def move(index, token = "X")
   @board[index] = token
 end
 
-def position_taken?(index)
-  corrected_index = input_to_index(index)
-  @board[corrected_index].nil? || @board[corrected_index] == " " #return true if the position is taken
-end
+# def position_taken?(index)
+#   corrected_index = input_to_index(index)
+#   @board[corrected_index].nil? || @board[corrected_index] == " " #return true if the position is taken
+# end
+
+  def position_taken?(location)
+    location2 = location.to_i
+   !(@board(location2).nil? || @board(location2) == " ")
+  end
 
 def valid_move?(index)
   index.between?(0,8) && !position_taken?(index)
