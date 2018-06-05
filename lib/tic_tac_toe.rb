@@ -57,7 +57,7 @@ def turn
        if !valid_move?(user_input)
          turn
        end
-       move(user_input, current_player )
+       move(user_input, current_player)
 end
 
 def turn_count
