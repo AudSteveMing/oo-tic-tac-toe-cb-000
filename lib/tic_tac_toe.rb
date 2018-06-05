@@ -49,7 +49,7 @@ end
 #   end
 
 def turn
-  display_board
+      display_board
 
       puts "Please enter a number between 1-9"
       user_input = gets.strip
@@ -57,7 +57,9 @@ def turn
        if !valid_move?(user_input_normalized)
          turn
        end
-       move(user_input_normalized, current_player )
+       move(user_input_normalized, current_player)
+       display_board
+
 end
 
 def turn_count
