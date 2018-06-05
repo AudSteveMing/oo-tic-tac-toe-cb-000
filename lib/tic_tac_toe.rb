@@ -49,7 +49,7 @@ end
 #   end
 
 def turn
-  display_board
+  # display_board
 
       puts "Please enter a number between 1-9"
       user_input = gets.strip
