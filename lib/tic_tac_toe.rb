@@ -32,7 +32,7 @@ end
 
 def position_taken?(index)
   corrected_index = input_to_index(index)
-  @board[corrected_index].nil? || !@board[corrected_index] == " " #return true if the position is taken
+  @board[corrected_index].nil? || @board[corrected_index] == " " #return true if the position is taken
 end
 
 def valid_move?(index)
