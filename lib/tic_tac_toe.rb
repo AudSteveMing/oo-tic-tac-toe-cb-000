@@ -117,16 +117,16 @@ class TicTacToe
     @board = Array.new(9, " ")
   end
 
-  # def play
-  #   while !over?
-  #     turn
-  #   end
-  #   if won?
-  #     puts "Congratulations #{winner}!"
-  #   elsif draw?
-  #     puts "Cats Game!"
-  #   end
-  # end
+  def play
+    while !over?
+      turn
+    end
+    if won?
+      puts "Congratulations #{winner}!"
+    elsif draw?
+      puts "Cats Game!"
+    end
+  end
 
   def display_board
     puts " #{board[0]} | #{board[1]} | #{board[2]} "
