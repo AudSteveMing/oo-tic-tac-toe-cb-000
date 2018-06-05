@@ -37,7 +37,7 @@ end
 
   def position_taken?(location)
     location2 = location.to_i
-   !(@board(location2).nil? || @board(location2) == " ")
+   !(@board[location2].nil? || @board[location2] == " ")
   end
 
 def valid_move?(index)
