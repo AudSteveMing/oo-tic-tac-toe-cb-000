@@ -193,9 +193,15 @@ class TicTacToe
     @board[location.to_i]
   end
 
-  def position_taken?(location)
-    !(position(location).nil? || position(location) == " ")
-  end
+
+    def position_taken?(location)
+      location2 = location.to_i
+     !(@board[location2].nil? || @board[location2] == " ")
+    end
+
+  # def position_taken?(location)
+  #   !(position(location).nil? || position(location) == " ")
+  # end
 
   def input_to_index(number)
     num_input = number.to_i - 1
