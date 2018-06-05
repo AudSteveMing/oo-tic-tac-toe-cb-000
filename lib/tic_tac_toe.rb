@@ -30,10 +30,6 @@ def move(index, token = "X")
   @board[index] = token
 end
 
-# def position_taken?(index)
-#   corrected_index = input_to_index(index)
-#   @board[corrected_index].nil? || @board[corrected_index] == " " #return true if the position is taken
-# end
 
   def position_taken?(location)
     location2 = location.to_i
@@ -51,5 +47,40 @@ end
 #   def position_taken?(location)
 #    !(position(location).nil? || position(location) == " ")
 #   end
+
+def turn
+
+end
+
+def turn_count
+
+end
+
+def current_player
+end
+
+def won?
+
+end
+
+def full?
+
+end
+
+def draw?
+
+end
+
+def over?
+
+end
+
+def winner
+
+end
+
+def play
+
+end
 
 end
