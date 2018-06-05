@@ -167,9 +167,9 @@ class TicTacToe
     @board.count{|token| token == "X" || token == "O"}
   end
 
-  def move(location, token)
-    @board[location.to_i-1] = token
-  end
+  # def move(location, token)
+  #   @board[location.to_i-1] = token
+  # end
 
   def won?
     WIN_COMBINATIONS.detect do |combo|
@@ -195,5 +195,13 @@ class TicTacToe
 
   def position_taken?(location)
     !(position(location).nil? || position(location) == " ")
+  end
+
+  def input_to_index(number)
+    num_input = number.to_i - 1
+  end
+  
+  def move(index, token = "X")
+    @board[index] = token
   end
 end
