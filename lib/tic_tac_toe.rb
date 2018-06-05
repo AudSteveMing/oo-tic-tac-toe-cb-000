@@ -52,16 +52,10 @@ def turn
       puts "Please enter a number between 1-9"
       user_input = gets.strip
       user_input_normalized = input_to_index(user_input)
-       if valid_move?(user_input_normalized)
-         move(user_input_normalized, current_player)
-         display_board
-       else
+       if !valid_move?(user_input_normalized)
          turn
        end
-
-      # calls #input_to_index, #valid_move?, and #current_player (FAILED - 5)
-      # makes valid moves and displays the board (FAILED - 6)
-      # asks for input again after a failed validation (FAILED - 7)
+       move(user_input_normalized, current_player )
 end
 
 def turn_count
