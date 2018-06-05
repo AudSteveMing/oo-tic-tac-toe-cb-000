@@ -65,7 +65,8 @@ def turn
     display_board
     puts "Please enter 1-9:"
     input = gets.strip
-    if !valid_move?(input)
+    input2 - input_to_index(index)
+    if !valid_move?(input2)
       turn
     end
     move(input, current_player)
