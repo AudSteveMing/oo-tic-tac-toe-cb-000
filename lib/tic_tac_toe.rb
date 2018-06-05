@@ -56,6 +56,7 @@ def turn
          turn
        end
        move(user_input_normalized, current_player )
+       display_board
 end
 
 def turn_count
