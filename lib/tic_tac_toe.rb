@@ -143,8 +143,8 @@ class TicTacToe
     if !valid_move?(input)
       turn
     end
-    move(input, current_player)
-    display_board
+    # move(input, current_player)
+    # display_board
   end
 
   def valid_move?(input)
